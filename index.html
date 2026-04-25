@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIGNESH — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════ CINEMA INTRO ══════ -->
+  <div id="intro">
+    <div class="intro-logo">VIGNESH</div>
+    <div class="intro-line"></div>
+    <div class="intro-sub">Web Developer &amp; Engineer</div>
+  </div>
+  <div class="letterbox-top" id="ltop"></div>
+  <div class="letterbox-bottom" id="lbot"></div>
+
+  <!-- ══════ CURSOR ══════ -->
+  <div id="cur"></div>
+  <div id="cur-trail"></div>
+
+  <!-- ══════ BACKGROUND LAYERS ══════ -->
+  <canvas id="scene-canvas"></canvas>
+  <div id="grain"></div>
+  <div id="vignette"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- ══════ NAVIGATION ══════ -->
+  <nav>
+    <a href="#hero" class="nav-brand">V—</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Craft</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════ HERO ══════ -->
+  <section id="hero">
+    <div class="hero-eyebrow">CS Engineer &amp; Web Developer</div>
+    <h1 class="hero-title">
+      <span class="line1">VIG</span>
+      <span class="line2">NESH</span>
+    </h1>
+    <p class="hero-tagline">
+      <em>Crafting digital experiences with precision, passion &amp; purpose.</em>
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <div class="meta-num">10+</div>
+        <div class="meta-label">Projects</div>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <div class="meta-num">5+</div>
+        <div class="meta-label">Technologies</div>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <div class="meta-num">2+</div>
+        <div class="meta-label">Years Coding</div>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <div class="meta-num">∞</div>
+        <div class="meta-label">Curiosity</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-text">Scroll to explore</div>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ══════ ABOUT ══════ -->
+  <section id="about">
+    <div class="chapter">
+      <div class="chapter-num reveal">Chapter I — The Developer</div>
+      <div class="about-layout">
+
+        <!-- Poster Card -->
+        <div class="about-poster reveal-left">
+          <div class="poster-card" id="posterCard">
+            <div class="poster-bg"></div>
+            <div class="poster-grid"></div>
+            <div class="poster-corner pc-tl"></div>
+            <div class="poster-corner pc-tr"></div>
+            <div class="poster-corner pc-bl"></div>
+            <div class="poster-corner pc-br"></div>
+            <div class="poster-content">
+              <div class="poster-avatar">V</div>
+              <div class="poster-name">VIGNESH</div>
+              <div class="poster-divider"></div>
+              <div class="poster-role">Computer Science &amp; Engineering Student</div>
+              <div class="poster-badges">
+                <span class="badge">Front-End Dev</span>
+                <span class="badge">UI/UX</span>
+                <span class="badge">React</span>
+                <span class="badge">CSS Artisan</span>
+                <span class="badge">Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Block -->
+        <div class="about-text-block reveal-right">
+          <h2 class="section-title">
+            Building the <span class="gold">Web</span><br>
+            <span class="outline">Of Tomorrow</span>
+          </h2>
+          <p class="about-copy">
+            I am <em>Vignesh</em>, a Computer Science and Engineering student with an unstoppable passion for web development. I thrive on creating modern, responsive, and user-friendly digital experiences where clean design meets smooth functionality.
+          </p>
+          <p class="about-copy">
+            My interests live at the intersection of <em>front-end development</em>, UI/UX design, and emerging web technologies. I'm constantly sharpening my skills through real-world projects that bridge creative vision and structured, performant code.
+          </p>
+          <p class="about-copy">
+            My goal is clear: grow as a <em>professional web developer</em> and contribute to innovative, impactful digital solutions that make a difference.
+          </p>
+          <div class="data-row">
+            <div class="data-block">
+              <div class="data-num">10+</div>
+              <div class="data-label">Projects Built</div>
+            </div>
+            <div class="data-block">
+              <div class="data-num">CSE</div>
+              <div class="data-label">Degree</div>
+            </div>
+            <div class="data-block">
+              <div class="data-num">2025</div>
+              <div class="data-label">Available</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ SKILLS ══════ -->
+  <section id="skills">
+    <div class="skills-scene">
+      <div class="chapter-num reveal">Chapter II — The Craft</div>
+      <div class="skills-title-block reveal">
+        <h2 class="section-title">Skills &amp; <span class="gold">Arsenal</span></h2>
+      </div>
+      <div class="skills-cinema">
+
+        <div class="skill-panel reveal">
+          <span class="sp-glyph">🎨</span>
+          <div class="sp-name">Front-End Development</div>
+          <div class="sp-tags">
+            <span class="sp-tag">HTML5</span><span class="sp-tag">CSS3</span>
+            <span class="sp-tag">JavaScript</span><span class="sp-tag">React</span>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="--w:0.88"></div></div>
+          <div class="sp-num">88%</div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <span class="sp-glyph">🖼️</span>
+          <div class="sp-name">UI/UX Design</div>
+          <div class="sp-tags">
+            <span class="sp-tag">Figma</span><span class="sp-tag">Responsive</span>
+            <span class="sp-tag">Prototyping</span>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="--w:0.78"></div></div>
+          <div class="sp-num">78%</div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <span class="sp-glyph">⚙️</span>
+          <div class="sp-name">Frameworks &amp; Tools</div>
+          <div class="sp-tags">
+            <span class="sp-tag">Tailwind</span><span class="sp-tag">Node.js</span>
+            <span class="sp-tag">Git</span><span class="sp-tag">VS Code</span>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="--w:0.82"></div></div>
+          <div class="sp-num">82%</div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <span class="sp-glyph">🧠</span>
+          <div class="sp-name">Core CS Concepts</div>
+          <div class="sp-tags">
+            <span class="sp-tag">DSA</span><span class="sp-tag">OOP</span>
+            <span class="sp-tag">Python</span><span class="sp-tag">Java</span>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="--w:0.75"></div></div>
+          <div class="sp-num">75%</div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <span class="sp-glyph">🚀</span>
+          <div class="sp-name">Web Performance</div>
+          <div class="sp-tags">
+            <span class="sp-tag">Optimization</span><span class="sp-tag">SEO</span>
+            <span class="sp-tag">Accessibility</span>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="--w:0.72"></div></div>
+          <div class="sp-num">72%</div>
+        </div>
+
+        <div class="skill-panel reveal">
+          <span class="sp-glyph">🗃️</span>
+          <div class="sp-name">Back-End Basics</div>
+          <div class="sp-tags">
+            <span class="sp-tag">REST API</span><span class="sp-tag">MySQL</span>
+            <span class="sp-tag">Express</span>
+          </div>
+          <div class="sp-bar"><div class="sp-fill" style="--w:0.62"></div></div>
+          <div class="sp-num">62%</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ PROJECTS ══════ -->
+  <section id="projects">
+    <div class="projects-scene">
+      <div class="chapter-num reveal">Chapter III — The Work</div>
+      <div class="reveal">
+        <h2 class="section-title">Featured <span class="gold">Projects</span></h2>
+      </div>
+      <div class="projects-reel reveal">
+
+        <!-- Project 01 -->
+        <div class="proj-row">
+          <div class="proj-idx">01</div>
+          <div class="proj-main">
+            <div class="proj-label">// Portfolio</div>
+            <div class="proj-title">PERSONAL PORTFOLIO</div>
+            <div class="proj-expand">
+              <div class="proj-desc">A cinematic, immersive portfolio with 3D animations, custom cursor effects, film-grain aesthetics, and smooth scroll-reveal interactions. Built entirely from scratch.</div>
+              <div class="proj-tech">
+                <span class="proj-tag">HTML</span>
+                <span class="proj-tag">CSS</span>
+                <span class="proj-tag">JavaScript</span>
+                <span class="proj-tag">Canvas</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-screen">
+              <div class="proj-screen-bar">
+                <div class="pdot p1"></div><div class="pdot p2"></div><div class="pdot p3"></div>
+              </div>
+              <div class="proj-screen-body">
+                <div class="pline"></div><div class="pline"></div>
+                <div class="pline"></div><div class="pline"></div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-year">2025</div>
+            <div class="proj-status">Live</div>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="proj-row">
+          <div class="proj-idx">02</div>
+          <div class="proj-main">
+            <div class="proj-label">// E-Commerce</div>
+            <div class="proj-title">SHOPFRONT UI</div>
+            <div class="proj-expand">
+              <div class="proj-desc">A clean, mobile-first e-commerce front-end with product listings, shopping cart, filter system, and smooth page transitions using React and Tailwind CSS.</div>
+              <div class="proj-tech">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">Tailwind</span>
+                <span class="proj-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-screen">
+              <div class="proj-screen-bar">
+                <div class="pdot p1"></div><div class="pdot p2"></div><div class="pdot p3"></div>
+              </div>
+              <div class="proj-screen-body">
+                <div class="pline"></div><div class="pline"></div>
+                <div class="pline"></div><div class="pline"></div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-year">2024</div>
+            <div class="proj-status">Complete</div>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="proj-row">
+          <div class="proj-idx">03</div>
+          <div class="proj-main">
+            <div class="proj-label">// Productivity</div>
+            <div class="proj-title">TASK MANAGER APP</div>
+            <div class="proj-expand">
+              <div class="proj-desc">A full-featured productivity web app with drag-and-drop tasks, priority tagging, category filters, dark mode, and local storage persistence for seamless workflow management.</div>
+              <div class="proj-tech">
+                <span class="proj-tag">JavaScript</span>
+                <span class="proj-tag">LocalStorage</span>
+                <span class="proj-tag">CSS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-screen">
+              <div class="proj-screen-bar">
+                <div class="pdot p1"></div><div class="pdot p2"></div><div class="pdot p3"></div>
+              </div>
+              <div class="proj-screen-body">
+                <div class="pline"></div><div class="pline"></div>
+                <div class="pline"></div><div class="pline"></div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-year">2024</div>
+            <div class="proj-status">Complete</div>
+          </div>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="proj-row">
+          <div class="proj-idx">04</div>
+          <div class="proj-main">
+            <div class="proj-label">// UI/UX</div>
+            <div class="proj-title">DASHBOARD DESIGN</div>
+            <div class="proj-expand">
+              <div class="proj-desc">An analytics dashboard UI with data visualizations, responsive grid layout, dark/light themes, and reusable component architecture using React and Chart.js.</div>
+              <div class="proj-tech">
+                <span class="proj-tag">React</span>
+                <span class="proj-tag">Chart.js</span>
+                <span class="proj-tag">CSS Grid</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-visual">
+            <div class="proj-screen">
+              <div class="proj-screen-bar">
+                <div class="pdot p1"></div><div class="pdot p2"></div><div class="pdot p3"></div>
+              </div>
+              <div class="proj-screen-body">
+                <div class="pline"></div><div class="pline"></div>
+                <div class="pline"></div><div class="pline"></div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-meta">
+            <div class="proj-year">2025</div>
+            <div class="proj-status">WIP</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ CONTACT ══════ -->
+  <section id="contact">
+    <div class="contact-scene">
+      <div class="chapter-num reveal">Chapter IV — Connect</div>
+      <h2 class="contact-title reveal">
+        Let's Create<br><span class="gold">Something</span><br>Legendary
+      </h2>
+      <p class="contact-subtitle reveal">
+        Open to opportunities, collaborations, freelance work, and meaningful conversations. If you have a vision — let's bring it to life.
+      </p>
+      <div class="contact-grid reveal">
+        <a href="mailto:vignesh@email.com" class="contact-cell">
+          <span class="c-icon">✉</span>
+          <div class="c-label">Email</div>
+          <div class="c-val">vignesh@email.com</div>
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-cell">
+          <span class="c-icon">⌥</span>
+          <div class="c-label">GitHub</div>
+          <div class="c-val">github.com/vignesh</div>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-cell">
+          <span class="c-icon">◈</span>
+          <div class="c-label">LinkedIn</div>
+          <div class="c-val">linkedin.com/in/vignesh</div>
+        </a>
+      </div>
+      <div class="cta-row reveal">
+        <a href="mailto:vignesh@email.com" class="btn-cine btn-gold">Send Message</a>
+        <a href="#" class="btn-cine btn-ghost">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer>
+    <div class="footer-brand">VIGNESH —</div>
+    <div class="footer-copy">© 2025 — Designed &amp; Built with passion</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
